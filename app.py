@@ -9,7 +9,7 @@ APP = Flask(__name__)
 
 # Load the data
 with open('data.json', 'r') as daj:
-  MASCOTS = json.load(daj)
+    MASCOTS = json.load(daj)
 
 
 @APP.route('/', methods=['GET'])
